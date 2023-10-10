@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/tx
+         http://www.springframework.org/schema/tx/spring-tx.xsd
+         ">
+	<context:annotation-config />
+
+	<bean class="assign_q4.student" name="s1">
+		<property name="id" value="01" />
+		<property name="fname" value="shivam" />
+		<property name="lname" value="pandey" />
+		<property name="email" value="shivampandey@gmail.com" />
+		<property name="contact" value="7434046336"/>
+	</bean>
+     <bean class="assign_q4.student" name="s2">
+		<property name="id" value="02" />
+		<property name="fname" value="vikram" />
+		<property name="lname" value="jadav" />
+		<property name="email" value="shivampandey@gmail.com" />
+		<property name="contact" value="7434046336"/>
+	</bean>
+     <bean class="assign_q4.student" name="s3">
+		<property name="id" value="03" />
+		<property name="fname" value="shivam" />
+		<property name="lname" value="pandey" />
+		<property name="email" value="shivampandey@gmail.com" />
+		<property name="contact" value="7434046336"/>
+	</bean>
+     <bean class="assign_q4.student" name="s4">
+		<property name="id" value="04" />
+		<property name="fname" value="shivam" />
+		<property name="lname" value="pandey" />
+		<property name="email" value="shivampandey@gmail.com" />
+		<property name="contact" value="7434046336"/>
+	</bean>
+     <bean class="assign_q4.student" name="s5">
+		<property name="id" value="05" />
+		<property name="fname" value="shivam" />
+		<property name="lname" value="pandey" />
+		<property name="email" value="shivampandey@gmail.com" />
+		<property name="contact" value="7434046336"/>
+	</bean>
+     <bean class="java.util.ArrayList" name="list">
+     
+       <constructor-arg>
+           <list>
+            <ref bean="s1"/>
+            <ref bean="s2"/>
+            <ref bean="s3"/>
+            <ref bean="s4"/>
+            <ref bean="s5"/>
+           
+           
+           </list>
+           
+         
+       </constructor-arg>
+     
+     
+     </bean>
+
+</beans>
